@@ -1,0 +1,31 @@
+201B6209	//[Conversation text:0x962 ]Dialog (conversation) with no background (LOW)(TEXTSHOW)
+21032800	//Checks whether the flag is set[Flag:0x28 Temporary flag 28](CHECK_EVENTID)
+400C00900C000000	//BEQ (If [MemorySlotX:0xC Result] == [MemorySlotY:0x0 Always 0 (write protected)], Then Jump to [Conditional ID:0x9000], Else execute following)
+201B6309	//[Conversation text:0x963 Jagen? Wait! Jagen! ]Dialog (conversation) with no background (LOW)(TEXTSHOW)
+20090190	//GOTO[Conditional ID:0x9001]
+20080090	//LABEL[Conditional ID:0x9000]
+21032700	//Checks whether the flag is set[Flag:0x27 Temporary flag 27](CHECK_EVENTID)
+400C02900C000000	//BEQ (If [MemorySlotX:0xC Result] == [MemorySlotY:0x0 Always 0 (write protected)], Then Jump to [Conditional ID:0x9002], Else execute following)
+201B6409	//[Conversation text:0x964 Abel? Wait! Abel!  ]Dialog (conversation) with no background (LOW)(TEXTSHOW)
+20090390	//GOTO[Conditional ID:0x9003]
+20080290	//LABEL[Conditional ID:0x9002]
+21032600	//Checks whether the flag is set[Flag:0x26 Temporary flag 26](CHECK_EVENTID)
+400C04900C000000	//BEQ (If [MemorySlotX:0xC Result] == [MemorySlotY:0x0 Always 0 (write protected)], Then Jump to [Conditional ID:0x9004], Else execute following)
+201B6509	//[Conversation text:0x965 Cain? Wait! Cain!  ]Dialog (conversation) with no background (LOW)(TEXTSHOW)
+20090590	//GOTO[Conditional ID:0x9005]
+20080490	//LABEL[Conditional ID:0x9004]
+21032500	//Checks whether the flag is set[Flag:0x25 Temporary flag 25](CHECK_EVENTID)
+400C06900C000000	//BEQ (If [MemorySlotX:0xC Result] == [MemorySlotY:0x0 Always 0 (write protected)], Then Jump to [Conditional ID:0x9006], Else execute following)
+201B6609	//[Conversation text:0x966 Frey? Wait! Frey!  ]Dialog (conversation) with no background (LOW)(TEXTSHOW)
+20090790	//GOTO[Conditional ID:0x9007]
+20080690	//LABEL[Conditional ID:0x9006]
+21032400	//Checks whether the flag is set[Flag:0x24 Temporary flag 24](CHECK_EVENTID)
+400C08900C000000	//BEQ (If [MemorySlotX:0xC Result] == [MemorySlotY:0x0 Always 0 (write protected)], Then Jump to [Conditional ID:0x9008], Else execute following)
+201B6709	//[Conversation text:0x967 Gordin? Wait! Gordin]Dialog (conversation) with no background (LOW)(TEXTSHOW)
+20080890	//LABEL[Conditional ID:0x9008]
+20080790	//LABEL[Conditional ID:0x9007]
+20080590	//LABEL[Conditional ID:0x9005]
+20080390	//LABEL[Conditional ID:0x9003]
+20080190	//LABEL[Conditional ID:0x9001]
+201B6809201D0000	//[Conversation text:0x968 ...... ...All right]Dialog (conversation) with no background (LOW)(TEXTSHOW+TEXTEND)
+2802070020010000	//Event end(also serves as a section to no fade)(EVBIT_T+ENDA)

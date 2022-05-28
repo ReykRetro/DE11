@@ -1,0 +1,8 @@
+4005020002000000400A00009CE19E08	//When[Character:0x2 Jagen]stops in range (used at the start of range based events)
+201A0000201B5809201D0000221B0000	//Dialog (conversation)[conversation text:0x958 I won't fail you.](TEXTSTART+TEXTSHOW+TEXTEND+REMA)
+4035020001000000	//Change [Unit:0x2 Jagen]'s class to [Class:0x1 Lord](RECLASS)
+422F1E000200020020300000	//Move[Character:0x2 Jagen]one space[Direction:0x2 ↓]with[Speed:30 frame sec(0.5 sec)]and wait(MOVE_1STEP+ENUN)(LOW)
+2F340200	//Erase [Character:0x2 Jagen] (DISA)
+29021100	//Flag ON[Flag:0x11 Temporary flag 11](ENUT)
+29022800	//Flag ON[Flag:0x28 Temporary flag 28](ENUT)
+2802070020010000	//Event end(also serves as a section to no fade)(EVBIT_T+ENDA)

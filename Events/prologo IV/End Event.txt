@@ -1,0 +1,87 @@
+22331A00	//Checks if alive the [Character:0x1A Gordin](CHECK_ALIVE)
+400C00000C000000	//BEQ (If [MemorySlotX:0xC Result] == [MemorySlotY:0x0 Always 0 (write protected)], Then Jump to [Conditional ID:0x0], Else execute following)
+20123100	//Change BGM to[Song:0x31 Victory](MUSC)
+402C01001C800B0920300000	//Load units and move. If player unit, join party.[Units:0x90B801C](LOAD1+ENUN)
+201A00004005020029000000400503008C090000400A000010E39E08221B0000	//Dialog (conversation) with BG[Background:0x29 ][Conversation text:0x98C Prince Marth! Make ](TEXTSTART+SetBackground+REMA)
+20090100	//GOTO[Conditional ID:0x1]
+20080000	//LABEL[Conditional ID:0x0]
+20123200	//Change BGM to[Song:0x32 Into the Shadow of Victory](MUSC)
+402C01001C800B0920300000	//Load units and move. If player unit, join party.[Units:0x90B801C](LOAD1+ENUN)
+402C01007C800B0920300000	//Load units and move. If player unit, join party.[Units:0x90B807C](LOAD1+ENUN)
+201A00004005020029000000400503008D090000400A000010E39E08221B0000	//Dialog (conversation) with BG[Background:0x29 ][Conversation text:0x98D Prince Marth!  Make](TEXTSTART+SetBackground+REMA)
+20080100	//LABEL[Conditional ID:0x1]
+21171000	//Fade the screen to black with[Speed:16 frame sec(0.2667 sec)] Normal->Dark (FADI)
+20220000	//Erase the background(CLEAN)
+20230000	//Hide all units on the map.(HIDEMAP)
+2A3400002C3400002B340000	//Clear (erase) all units(CLEA+CLEN+CLEE)
+20254900	//[Chapter ID:0x49  ] Map switching (LOMA)
+20171000	//Fade the screen back from black with[Speed:16 frame sec(0.2667 sec)] Dark->Normal (FADU)
+412C0100E4820B0920300000	//Load units and move.[Units:0x90B82E4](LOAD2+ENUN)
+21032800	//Checks whether the flag is set[Flag:0x28 Temporary flag 28](CHECK_EVENTID)
+400C00900C000000	//BEQ (If [MemorySlotX:0xC Result] == [MemorySlotY:0x0 Always 0 (write protected)], Then Jump to [Conditional ID:0x9000], Else execute following)
+402C0100C4830B09	//Load units. If player unit, join party.[Units:0x90B83C4](LOAD1)
+20090190	//GOTO[Conditional ID:0x9001]
+20080090	//LABEL[Conditional ID:0x9000]
+21032700	//Checks whether the flag is set[Flag:0x27 Temporary flag 27](CHECK_EVENTID)
+400C02900C000000	//BEQ (If [MemorySlotX:0xC Result] == [MemorySlotY:0x0 Always 0 (write protected)], Then Jump to [Conditional ID:0x9002], Else execute following)
+402C0100DC830B09	//Load units. If player unit, join party.[Units:0x90B83DC](LOAD1)
+20090390	//GOTO[Conditional ID:0x9003]
+20080290	//LABEL[Conditional ID:0x9002]
+21032600	//Checks whether the flag is set[Flag:0x26 Temporary flag 26](CHECK_EVENTID)
+400C04900C000000	//BEQ (If [MemorySlotX:0xC Result] == [MemorySlotY:0x0 Always 0 (write protected)], Then Jump to [Conditional ID:0x9004], Else execute following)
+402C0100F4830B09	//Load units. If player unit, join party.[Units:0x90B83F4](LOAD1)
+20090590	//GOTO[Conditional ID:0x9005]
+20080490	//LABEL[Conditional ID:0x9004]
+21032500	//Checks whether the flag is set[Flag:0x25 Temporary flag 25](CHECK_EVENTID)
+400C06900C000000	//BEQ (If [MemorySlotX:0xC Result] == [MemorySlotY:0x0 Always 0 (write protected)], Then Jump to [Conditional ID:0x9006], Else execute following)
+402C01000C840B09	//Load units. If player unit, join party.[Units:0x90B840C](LOAD1)
+20090790	//GOTO[Conditional ID:0x9007]
+20080690	//LABEL[Conditional ID:0x9006]
+21032400	//Checks whether the flag is set[Flag:0x24 Temporary flag 24](CHECK_EVENTID)
+400C08900C000000	//BEQ (If [MemorySlotX:0xC Result] == [MemorySlotY:0x0 Always 0 (write protected)], Then Jump to [Conditional ID:0x9008], Else execute following)
+402C010024840B09	//Load units. If player unit, join party.[Units:0x90B8424](LOAD1)
+20080890	//LABEL[Conditional ID:0x9008]
+20080790	//LABEL[Conditional ID:0x9007]
+20080590	//LABEL[Conditional ID:0x9005]
+20080390	//LABEL[Conditional ID:0x9003]
+20080190	//LABEL[Conditional ID:0x9001]
+201A0000201B8E09201D0000221B0000	//Dialog (conversation)[conversation text:0x98E This is... the wrong](TEXTSTART+TEXTSHOW+TEXTEND+REMA)
+200E1E00	//[Duration (1/60 second):30 frame sec(0.5 sec)]Wait(STAL)
+21032800	//Checks whether the flag is set[Flag:0x28 Temporary flag 28](CHECK_EVENTID)
+400C00900C000000	//BEQ (If [MemorySlotX:0xC Result] == [MemorySlotY:0x0 Always 0 (write protected)], Then Jump to [Conditional ID:0x9000], Else execute following)
+201A0000201B8F09201D0000221B0000	//Dialog (conversation)[conversation text:0x98F Heh, these old bones](TEXTSTART+TEXTSHOW+TEXTEND+REMA)
+2D340200	//[Character:0x2 Jagen]Erase (kill) unit with death SFX(SET_SOMETHING)
+20090190	//GOTO[Conditional ID:0x9001]
+20080090	//LABEL[Conditional ID:0x9000]
+21032700	//Checks whether the flag is set[Flag:0x27 Temporary flag 27](CHECK_EVENTID)
+400C02900C000000	//BEQ (If [MemorySlotX:0xC Result] == [MemorySlotY:0x0 Always 0 (write protected)], Then Jump to [Conditional ID:0x9002], Else execute following)
+201A0000201B9009201D0000221B0000	//Dialog (conversation)[conversation text:0x990 Good... Altea's hope](TEXTSTART+TEXTSHOW+TEXTEND+REMA)
+2D340300	//[Character:0x3 Abel]Erase (kill) unit with death SFX(SET_SOMETHING)
+20090390	//GOTO[Conditional ID:0x9003]
+20080290	//LABEL[Conditional ID:0x9002]
+21032600	//Checks whether the flag is set[Flag:0x26 Temporary flag 26](CHECK_EVENTID)
+400C04900C000000	//BEQ (If [MemorySlotX:0xC Result] == [MemorySlotY:0x0 Always 0 (write protected)], Then Jump to [Conditional ID:0x9004], Else execute following)
+201A0000201B9109201D0000221B0000	//Dialog (conversation)[conversation text:0x991 Glory to Altea, land](TEXTSTART+TEXTSHOW+TEXTEND+REMA)
+2D340E00	//[Character:0xE Cain]Erase (kill) unit with death SFX(SET_SOMETHING)
+20090590	//GOTO[Conditional ID:0x9005]
+20080490	//LABEL[Conditional ID:0x9004]
+21032500	//Checks whether the flag is set[Flag:0x25 Temporary flag 25](CHECK_EVENTID)
+400C06900C000000	//BEQ (If [MemorySlotX:0xC Result] == [MemorySlotY:0x0 Always 0 (write protected)], Then Jump to [Conditional ID:0x9006], Else execute following)
+201B9209	//[Conversation text:0x992 Count this knight ho]Dialog (conversation) with no background (LOW)(TEXTSHOW)
+2D341900	//[Character:0x19 Frey]Erase (kill) unit with death SFX(SET_SOMETHING)
+20090790	//GOTO[Conditional ID:0x9007]
+20080690	//LABEL[Conditional ID:0x9006]
+21032400	//Checks whether the flag is set[Flag:0x24 Temporary flag 24](CHECK_EVENTID)
+400C08900C000000	//BEQ (If [MemorySlotX:0xC Result] == [MemorySlotY:0x0 Always 0 (write protected)], Then Jump to [Conditional ID:0x9008], Else execute following)
+201A0000201B9509201D0000221B0000	//Dialog (conversation)[conversation text:0x995 I was dead anyway  ](TEXTSTART+TEXTSHOW+TEXTEND+REMA)
+2D341A00	//[Character:0x1A Gordin]Erase (kill) unit with death SFX(SET_SOMETHING)
+20080890	//LABEL[Conditional ID:0x9008]
+20080790	//LABEL[Conditional ID:0x9007]
+20080590	//LABEL[Conditional ID:0x9005]
+20080390	//LABEL[Conditional ID:0x9003]
+20080190	//LABEL[Conditional ID:0x9001]
+201A00004005020035000000400A0000E8E29E08221A00004221000000000200201B6B0D201D0000221B000020220000	//Conversation event using CG[CG:0x0 ][Serif:0xD6B And so Marth and his]
+201A000040050200080000004005030096090000400A000010E39E08221B0000	//Dialog (conversation) with BG[Background:0x8 ][Conversation text:0x996 Look, sire. See how ](TEXTSTART+SetBackground+REMA)
+21171000	//Fade the screen to black with[Speed:16 frame sec(0.2667 sec)] Normal->Dark (FADI)
+202A0000	//Return to title screen[Value 1:0x0](MNTS)
+2802070020010000	//Event end(also serves as a section to no fade)(EVBIT_T+ENDA)
