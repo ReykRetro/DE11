@@ -1,0 +1,70 @@
+----------------
+--->TILESETS<---
+----------------
+Improved Castle by "N426"
+Super Fields by "Nathan" and "HeartHero"
+
+
+------------------
+--->ANIMATIONS<---
+------------------
+Marth by "Blaze"
+
+
+-----------------
+--->PORTRAITS<---
+-----------------
+	Abel
+	Gordin
+	Lorenz
+	Wrys
+		by "Blueguy"
+		
+Astram by "Wasdye"
+Beck by "Wasdye"
+	
+	Caeda
+	Cain
+	Elice
+	Est
+	Marth (Prologues)
+		by "TAS20XX"
+
+Catria by "MeatofJustice"
+Est by "Obsidian_Daddy
+Jagen by "Flasuban"
+Julian by "Atey"
+Lena by "Blade"
+	
+	Maria
+	Minerva
+		by "Zelkami"
+		
+Marth (Main Story) by "BatimaTheBat"
+Midia by "Vilk"
+Minerva by "GhostBlade13"
+Palla by "SomeDenseGuy"
+Radd by "Zorua"
+Tiki Young by "GabrielKnight"
+Xane by "ShadowFlygon"
+
+	Athena
+	Kain
+		by Unknown
+		
+	Barst by "Nobody", "Glaceo", "Nickt"
+	Bord by "Frigid" and "Nickt"
+	Castor by "flingleforp" and "Nickt"
+	Cord by "Frigid"
+	Darros "flingleforp" and "Nickt"
+	Draug by "Lenh", "PK_Water" and "Nickt"
+
+Julian by "Glaceo"
+Linde by "MK404"
+Norne by "MK404" and "Nickt"
+Nyna by "Squidorsky"
+Ogma by "CirclesEverywhere" and "Nickt"
+Roshea by "Alusq" and "DerTheVaporeon"
+Sedgar by "DerTheVaporeon"
+Vyland by "Zmr", "Peerles", "Blueey" and "Nickt"
+Wolf by "DerTheVaporeon" and "Nickt"
